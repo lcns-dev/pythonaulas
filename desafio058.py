@@ -5,8 +5,9 @@ import random
 print("-=" * 30)
 print("Vou pensar em um número de 0 até 10, tente adivinhar.")
 print("-=" * 30)
-pc = int(input("Em que número eu pensei?"))
-num = random.randint(0, 10)
+escolha = int(input("Em que número eu pensei?"))
+pc = random.randint(0, 10)
 cont = 0
-while pc == num:
-    print("")
+while escolha != pc:
+    print("Opa")
+print("Tenta novamente")
