@@ -7,10 +7,22 @@
 
 #Seu programa deverá realizar a operação solicitada em cada caso.
 
-num1 = int(input("Digite o 1º número: "))
-num2 = int(input("Digite o 2º número: "))
+import math
+while True:
+    print()
+    num1 = int(input("Digite o 1º número: "))
+    operador = input("Digite o operador matemático [ + - / * ]: ")
+    num2 = int(input("Digite o 2º número: "))
 
-soma = num1 + num2
-mult = num1 * num2
 
-print(mult)
+    if operador == "+":
+        print(int(num1 + num2))
+    elif operador == "-":
+        print(int(num1 - num2))
+    elif operador == "/":
+        print(int(int(num1 / num2)))
+    elif operador == "*":
+        print(int(num1 * num2))
+    sair = input("Deseja sair? [s]im ou [n]ão: ")
+    if sair == "s":
+        break
